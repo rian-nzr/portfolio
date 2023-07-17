@@ -16,6 +16,28 @@
   }
 } */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  border-left: 0.1px solid;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
 html {
   scroll-behavior: smooth;
   letter-spacing: 0.3px;
