@@ -1,20 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -34,53 +23,4 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-
-
-html {
-  scroll-behavior: smooth;
-  letter-spacing: 0.3px;
-}
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-body {
-  /* background-image: url('/images/bg1.png');
-  background-repeat: no-repeat;
-  background-position:center -150px; */
-}
-.dark-mode-toggle {
-  font-family: sans-serif;
-}
-
-.animate-pulse {
-  animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
-input:checked {
-  background-color: #22c55e; /* bg-green-500 */
-}
-
-input:checked ~ span:last-child {
-  --tw-translate-x: 1.75rem; /* translate-x-7 */
 }

@@ -12,7 +12,7 @@ interface props {
 
 export default function Header({ fitur, setfitur }: props) {
        return (
-        <div className="fixed w-full dark:bg-gray-900 bg-white top-0 z-10 border-b dark:border-gray-600 border-gray-300 px-4">
+        <div className="fixed w-full dark:bg-gray-950 bg-white top-0 z-10 border-b dark:border-gray-600 border-gray-300 px-4">
             <div className="flex py-3 items-center justify-between">
                 <div className="flex items-center gap-5">
                     <button onClick={() => setfitur(!fitur)} className={`${fitur && "rotate-[360deg]"}`}>
