@@ -9,20 +9,22 @@ interface props {
 }
 
 export default function Layout({ children, }: props) {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
 
     return (
         <>
-            <div className="">
-                <Header setfitur={setOpen} fitur={open}/>
-                <div className='flex flex-col sm:flex-row sm:gap-5'>
+            <div className="transition-all duration-500">
+                <Header setfitur={setOpen} fitur={open} />
+                <div className='flex flex-col sm:flex-row sm:gap-5 relative top-14'>
                     <div className="w-auto">
-                        <div className="sticky top-14 sm:block hidden">
+                        <div className="sticky top-8 sm:block hidden transition-all duration-300">
                             <Sidebar fitur={open} />
                         </div>
                     </div>
-                    <main className='lg:w-4/5  lg:max-w-6xl container bg-white mx-auto transition-all duration-300'>
-                        {children}
+                    <main className='lg:w-4/5  lg:max-w-6xl container  mx-auto transition-all duration-300  flex flex-col justify-between min-h-screen '>
+                        <div className="">
+                            {children}
+                        </div>
                     </main>
                 </div>
             </div>
