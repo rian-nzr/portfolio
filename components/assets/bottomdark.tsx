@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes"
 import { BiSun, } from "react-icons/bi";
 import { PiMoonStarsDuotone } from "react-icons/pi"
-import { SetStateAction, useState, useEffect } from "react"
+import {  useState, useEffect } from "react"
 
 
 
@@ -35,7 +35,7 @@ export default function BottomDark() {
         }, 500);
     }
     return (
-        <button onClick={buttonAnimation} className={`duration-1000 cursor-pointer font-bold text-2xl ${isAnimating && "rotate-[100deg] opacity-0 scale-0"}`}>
+        <button onClick={buttonAnimation} className={`duration-700 cursor-pointer font-bold text-2xl ${isAnimating && "rotate-[100deg] opacity-0 scale-0"}`}>
             {toggleDarkMode()}
         </button>
     )
