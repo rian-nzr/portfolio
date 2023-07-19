@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import Sidebar from "./assets/sidebar";
 import Header from "./assets/header";
 import { useState } from "react";
+import { Footer } from "./assets/footer";
 
 
 interface props {
@@ -22,10 +23,13 @@ export default function Layout({ children, }: props) {
                         </div>
                     </div>
                     <main className='lg:w-4/5  lg:max-w-5xl container  mx-auto   flex flex-col justify-between min-h-screen '>
-                        <div className="">
+                        <div className=" min-h-screen flex flex-col justify-between">
                             {children}
+                            <Footer />
+                 
                         </div>
                     </main>
+
                 </div>
             </div>
         </>
