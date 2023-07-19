@@ -1,4 +1,5 @@
-import Hero from "@/components/sections/hero"
+import Hero from "@/components/sections/homepage/hero"
+import ListBlog from "@/components/sections/homepage/listblog"
 import Head from "next/head"
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
             </Head>
             <main className="py-5">
                 <Hero/>
+                <ListBlog/>
             </main>
         </>
     )

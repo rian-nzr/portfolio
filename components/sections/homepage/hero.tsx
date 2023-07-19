@@ -1,11 +1,11 @@
-import ProfileCard from "../assets/profileCard"
-import TypedBios from "../assets/typedbios"
-import BlogList from "../assets/bloglist"
+import ProfileCard from "../../assets/profileCard"
+import TypedBios from "../../assets/typedbios"
+import BlogList from "../../assets/bloglist"
 import {BiHappyBeaming} from "react-icons/bi"
 
 export default function Hero() {
     return (
-        <section className='gap-10 flex border-b pb-10 mt-5 dark:border-gray-700 border-gray-200'>
+        <section className='gap-10 flex border-b pb-12 mt-5 dark:border-gray-800 border-gray-200'>
             <div className="w-[28%] bg-b">
                 <ProfileCard />
             </div>
