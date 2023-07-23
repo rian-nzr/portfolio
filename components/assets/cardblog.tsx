@@ -1,7 +1,7 @@
 export default function CardBlog() {
     return (
         <>
-            <div className="py-4 flex flex-wrap md:flex-nowrap border-b border-gray-900">
+            <div className="py-4 flex flex-wrap md:flex-nowrap border-t dark:border-gray-900 border-gray-300">
                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                     <span className="font-semibold title-font ">CATEGORY</span>
                     <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
