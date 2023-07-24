@@ -6,7 +6,7 @@ export default function BlogCardModeII() {
         <>
             <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                 {/* Article */}
-                <article className="overflow-hidden rounded-lg dark:bg-gray-900  bg-gray-200 shadow-lg">
+                <article className="overflow-hidden rounded-xl dark:bg-gray-900  bg-gray-100 shadow-lg">
                     <div>
                         {/* <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/400/?random" /> */}
                         <Image

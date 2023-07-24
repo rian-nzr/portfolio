@@ -32,7 +32,7 @@ export default function Sidebar({ fitur }: props) {
                 <div className={` ${fitur ? "w-56" : "w-[70px] "} bg-dark-purple h-screen p-3  pt-8 relative duration-500`}>
                     <div className="flex flex-col gap-3 items-start border-b-[0.01px] dark:border-gray-600 pb-4">
                         <Image
-                            src="/images/rian.png"
+                            src="/images/photo.png"
                             alt="logo"
                             width={110}
                             height={110}
