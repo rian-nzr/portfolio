@@ -21,23 +21,22 @@ export default function ListPost() {
                </button>
             </div>
          </div>
-         {!mode ?
-            <div className="pl-14 flex flex-col gap-5 transition-all duration-1000">
-               {arr.map((item) => (
-                  <CardBlog key={item} />
-               ))}
+         <div className="flex flex-col gap-10">
+            {!mode ?
+               <div className="pl-14 flex flex-col gap-5 transition-all duration-1000">
+                  {arr.map((item) => (
+                     <CardBlog key={item} />
+                  ))}
 
-            </div> :
-            <div className="flex flex-wrap justify-center transition-all duration-1000">
-               {arr.map((item) => (
-                  <BlogCardModeII key={item} />
-               ))}
-
-
-            </div>
-         }
-
-         <Pagination />
+               </div> :
+               <div className="flex flex-wrap justify-center transition-all duration-1000">
+                  {arr.map((item) => (
+                     <BlogCardModeII key={item} />
+                  ))}
+               </div>
+            }
+            <Pagination />
+         </div>
 
       </>
    )

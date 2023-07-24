@@ -1,16 +1,19 @@
 import Head from "next/head"
+import AboutHome from "@/components/sections/about"
 
 export default function About() {
-    return(
+    return (
         <>
-        <Head>
-            <title>
-                About - Ryan
-            </title>
-        </Head>
-        ini adalah halaman About 
-        
+            <Head>
+                <title>
+                    About - Ryan
+                </title>
+            </Head>
+            <div className="">
+                <AboutHome />
+            </div>
+
         </>
     )
-    
+
 }
