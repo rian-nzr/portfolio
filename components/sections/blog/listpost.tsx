@@ -7,7 +7,7 @@ import { BsGrid, BsHddStack } from 'react-icons/bs'
 
 export default function ListPost() {
    const [mode, setMode] = useState(true);
-   const arr = [1, 2, 3, 4, 5, 6, 7];
+   const arr = [1, 2, 3, 4, 5, 6];
    return (
       <>
          <div className="flex items-center justify-between py-3 px-1">
