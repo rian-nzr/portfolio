@@ -10,23 +10,23 @@ async function main() {
 
 
     
-    const user1 = await prisma.user.create({
-        data: {
-            name: 'Rian',
-            email: 'rian@example.com',
-            password: 'rian1234',
-            role: "ADMIN",
-        },
-    });
+    // const user1 = await prisma.user.create({
+    //     data: {
+    //         name: 'Rian',
+    //         email: 'rian@example.com',
+    //         password: 'rian1234',
+    //         role: "ADMIN",
+    //     },
+    // });
 
-    const user2 = await prisma.user.create({
-        data: {
-            name: 'Jane Smith',
-            email: 'jane.smith@example.com',
-            password: 'jane1234',
-            role: "USER",
-        },
-    });
+    // const user2 = await prisma.user.create({
+    //     data: {
+    //         name: 'Jane Smith',
+    //         email: 'jane.smith@example.com',
+    //         password: 'jane1234',
+    //         role: "USER",
+    //     },
+    // });
 
     // Seed Posts
    const post1= await prisma.post.createMany({
