@@ -1,10 +1,17 @@
+import HomePage from "@/components/sections/homepage"
+import Hero from "@/components/sections/homepage/hero"
+import ListBlog from "@/components/sections/homepage/listblog"
+import Head from "next/head";
+
 export default function Home() {
     return (
-        <div className="bg-whit">
-            <p>
-                papapa
-            </p>
-            <p>lorem20000</p>
-        </div>
+        <>
+            <Head>
+                <title>Home - Ryan</title>
+            </Head>
+            <main className="py-5">
+                <HomePage/>  
+            </main>
+        </>
     )
 }   

@@ -1,0 +1,31 @@
+import TitlePage from "@/components/assets/titlepage";
+import ProfileCard from "@/components/assets/profileCard";
+
+export default function AboutHome() {
+    return (
+        <>
+            <TitlePage title='About' cari={false} desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, maiores." />
+
+            <section className='gap-10 flex border-b pb-12 mt-5 dark:border-gray-800 border-gray-200'>
+            <div className="w-[28%] bg-b">
+                <ProfileCard />
+            </div>
+            <div className="space-y-3 w-[72%]">
+
+                <div className='flex gap-2 text-2xl lg:text-4xl font-medium '>
+                    <h1>Hi, I&apos;m Ryan</h1>
+                    <div className='ml-1'>👋</div>
+                </div>
+                <div className='space-y-5'>     
+                    <p className='leading-[1.5] md:leading-loose text-gray-700 dark:text-gray-400 text-lg'>
+                        Seasoned Software Engineer especially in Frontend side, with a passion
+                        for creating pixel-perfect web experiences. I work with JavaScript and
+                        specialize in all-things web. I thrive on collaborating with teams to
+                        deliver efficient, scalable, and visually appealing web applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+        </>
+    )
+}
