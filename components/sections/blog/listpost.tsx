@@ -1,4 +1,3 @@
-import BlogList from "@/components/assets/bloglist";
 import CardBlog from "@/components/assets/cardblog";
 import BlogCardModeII from "@/components/assets/blogcardmodeii";
 import { useState } from "react";
