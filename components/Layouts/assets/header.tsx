@@ -1,4 +1,5 @@
 import { RiMenuUnfoldLine, RiMenuFoldLine } from "react-icons/ri"
+import { useState } from "react";
 import { IoIosCall } from "react-icons/io"
 import { SetStateAction} from "react"
 import { Dispatch } from "react";
@@ -11,6 +12,8 @@ interface props {
 }
 
 export default function Header({ fitur, setfitur }: props) {
+    
+
        return (
         <div className="fixed w-full dark:bg-gray-950 bg-white top-0 z-10 border-b dark:border-gray-600 border-gray-300 px-4">
             <div className="flex py-3 items-center justify-between">

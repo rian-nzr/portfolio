@@ -22,13 +22,13 @@ export default function Layout({ children, }: props) {
                             <Sidebar fitur={open} />
                         </div>
                     </div>
+
                     <main className='lg:w-4/5  lg:max-w-5xl container  mx-auto   flex flex-col justify-between min-h-screen '>
                         <div className=" min-h-screen flex flex-col justify-between">
                             {children}
-                            <Footer /> 
+                            <Footer />
                         </div>
                     </main>
-
                 </div>
             </div>
         </>
