@@ -32,7 +32,7 @@ export default function BottomDark() {
 
         setTimeout(() => {
             setIsAnimating(false);
-        }, 500);
+        }, 200);
     }
     return (
         <button onClick={buttonAnimation} className={`duration-700 cursor-pointer font-bold text-2xl ${isAnimating && "rotate-[100deg] opacity-0 scale-0"}`}>
