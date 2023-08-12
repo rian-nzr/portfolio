@@ -13,7 +13,7 @@ export default function PortfolioPage() {
     setTimeout(() => {
       !modalOpen === true && setModalOpen(true);
       setIsAnimating(false);
-    }, !modalOpen ? 400 : 0);
+    }, !modalOpen ? 300 : 0);
   } 
 
   return (
