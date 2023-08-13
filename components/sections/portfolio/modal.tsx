@@ -2,6 +2,9 @@ import { join } from "path";
 import { useState } from "react";
 import { MdClose } from "react-icons/md"
 import { SetStateAction, Dispatch } from "react"
+import Image from "next/image";
+import { STACKS } from '../../icons/stacks'
+import {SiGithub} from "react-icons/si"
 
 interface ModalProps {
   isOpen: boolean;
@@ -13,15 +16,42 @@ export default function Modal({ isOpen, onClose, isAnimating }: ModalProps) {
   return (
     <>
       <div className={`fixed top-0 left-0 min-w-full  h-screen z-10 flex items-center  justify-center transition-all duration-1000  ${!isOpen ? 'block' : 'hidden'}`}>
-        <div className={`mx-auto w-1/2 max-h-[95%]  dark:bg-gray-950  bg-white z-30 rounded-xl shadow-lg p-8  transition-all duration-500 ${isAnimating && !isOpen ? "scale-75 opacity-0" : "scale-100"}`}>
-          <button className="fixed top-0 right-0 text-2xl font-semibold pt-3 px-4" onClick={onClose}>
-            <MdClose />
-          </button>
-          <div className=" overflow-auto max-h-[100%] " >
-            <h1 className="text-xl font-medium dark:text-gray-300 text-gray-900 title-font leading-relaxed">
+        <div className={`mx-auto lg:w-[40%] w-[60%] max-h-[90%]  overflow-auto dark:bg-gray-950  bg-white z-30 rounded-xl shadow-lg py-5 transition-all duration-500 ${isAnimating && !isOpen ? "scale-75 opacity-0" : "scale-100 opacity-100"}`}>
+          <div className="flex items-center justify-between sticky top-0 dark:bg-gray-950  m-8 my-0 py-4 bg-white border-b border-dashed dark:border-gray-700 border-gray-300">
+            <h1 className="text-2xl font-medium dark:text-gray-300 text-gray-900 title-font leading-relaxed">
               PLN Log Dispatcher
             </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit assumenda consectetur cupiditate doloremque aliquam iusto accusamus perspiciatis magnam culpa commodi, corporis cum nihil in minima neque exercitationem fugit impedit quibusdam. Nemo optio sequi suscipit officia? Cum facere aliquam asperiores repudiandae illum quas deserunt commodi dolorum sunt, autem cumque enim, vel dolor fuga debitis laboriosam assumenda nesciunt incidunt tempora quasi non consequatur odit rem dolore. Sequi deleniti animi aut consequatur ipsam maiores perspiciatis veniam provident natus. Corporis praesentium eveniet fugiat, ducimus sunt reiciendis repellat dicta assumenda modi animi amet consequuntur dolores optio earum aliquam eligendi beatae cum obcaecati deserunt illum. Porro distinctio voluptatum fugiat veritatis perspiciatis quos illo, consequuntur repudiandae fuga facilis, rem velit numquam nostrum voluptatibus obcaecati accusantium itaque vel voluptatem? Harum, neque ab! Tenetur molestias fugiat explicabo qui molestiae ipsum, praesentium exercitationem deleniti totam nihil sapiente odit obcaecati, eaque, excepturi cum! Deserunt perspiciatis, accusantium consequuntur voluptate molestiae reprehenderit quos tempora quae voluptas deleniti praesentium nemo nihil delectus aspernatur dolorem quia soluta atque porro consectetur possimus ipsa cumque cum! Iure earum totam error omnis nam provident deserunt assumenda culpa minus aliquam aliquid doloribus, eos odit delectus dicta mollitia nulla harum alias tempora sapiente sunt? Vitae voluptas numquam nisi, nam fugit fuga autem exercitationem sint dolorum dolorem aut temporibus sequi sunt ratione quam placeat similique illum asperiores ducimus quod. Possimus, consequatur provident fuga sunt sequi, nisi modi blanditiis quo neque voluptatibus reiciendis vero unde quos magni molestiae qui culpa esse et exercitationem. Officia recusandae omnis explicabo unde! Ipsam exercitationem iure, labore nostrum amet minus vero. Consequatur laboriosam, id rerum tempore, unde necessitatibus suscipit fuga similique, laborum tenetur aspernatur laudantium ullam modi cupiditate consectetur mollitia aut blanditiis quasi reprehenderit accusantium cum. Quidem, neque qui, vitae distinctio impedit quo porro dolorem, alias delectus perferendis beatae sequi! Mollitia debitis nobis ratione necessitatibus porro ipsa soluta a obcaecati earum ad, enim repellendus officiis pariatur sint, minus tempora expedita fuga ducimus facere quos non cumque atque amet. Atque praesentium, aperiam, cumque mollitia nemo quia dolor ratione quasi saepe sint eaque eius recusandae inventore odit consequatur, iste qui pariatur quo nam adipisci minima dolore sed fugiat ullam. Delectus, velit excepturi? Praesentium nam eaque ut repellat nisi facere ducimus saepe hic eum, modi mollitia impedit distinctio reprehenderit obcaecati quae expedita adipisci. A, ullam ratione. Architecto, laborum ab! Tenetur, fugiat architecto. Amet magni praesentium at incidunt, in beatae pariatur minima optio error quia eos aliquid laboriosam provident impedit voluptatum debitis suscipit quod! Cumque saepe corrupti distinctio quo natus minus, eum impedit ipsum molestiae veniam quasi veritatis sit voluptates nobis, dolore nam. Quod eos saepe cumque accusantium ipsam fuga sed ab illo nam incidunt minima architecto sequi ratione ducimus dolorum maiores facilis laudantium, eligendi, tempore doloremque, est iusto? Aliquid ea sint animi deserunt modi deleniti saepe illo numquam, autem, maiores cumque hic ratione itaque vel vero tempora? Quam, pariatur tenetur quisquam vel voluptatem dolor magnam architecto voluptatum earum eum fugit accusamus laboriosam vero voluptate non dolorum. Tenetur facere commodi laboriosam placeat sapiente enim atque, omnis ex, officia dolorum provident nisi autem exercitationem in itaque quas natus animi, ipsa voluptates repudiandae! Esse possimus cupiditate voluptate aspernatur iusto debitis rerum nostrum nam odit numquam, voluptatum vero quis ea, beatae ab officiis. Quae dicta expedita eum, ipsa quas voluptate perferendis nostrum quidem obcaecati, esse voluptatibus, aut libero et. Molestias asperiores mollitia commodi delectus alias nesciunt expedita deserunt, natus corporis possimus repellendus labore id maiores aspernatur consectetur quis a unde illum vero ex dicta? Id a delectus consequatur odio error inventore commodi repellendus est, et deleniti molestiae assumenda, vero sequi, dolores porro quam quibusdam deserunt nobis blanditiis hic soluta ab quis aut amet. Vero ut minus voluptatibus, dolorem obcaecati consequatur, in autem maiores vel, minima accusantium voluptates! Nesciunt ex quis, veniam omnis dicta in magnam asperiores fuga illum aperiam quod temporibus alias nihil quo perferendis, rem rerum. Vel aspernatur perspiciatis earum sit aliquid distinctio laborum cupiditate asperiores eius dolorem quos dicta nostrum magnam, modi doloremque. Alias omnis aliquid dolores eos, ipsa repellat sit ipsum dignissimos, soluta culpa sunt ab ducimus distinctio! Iure quo cumque neque ratione excepturi soluta asperiores repudiandae cum, voluptate quis? Nam quibusdam modi accusamus ex libero reprehenderit minus id, sint esse tempora, quaerat omnis assumenda laborum recusandae. Libero accusamus similique ab ad corrupti blanditiis eveniet inventore accusantium incidunt laboriosam, veritatis impedit adipisci. Cumque adipisci doloremque error iusto optio exercitationem sunt harum, autem blanditiis asperiores illo illum. Fugit in corporis natus assumenda molestiae magnam ratione qui dolore cumque. Expedita vel pariatur ipsum voluptatibus repellat dolor similique tenetur placeat, natus saepe voluptates blanditiis quasi ex voluptatem illum sunt suscipit asperiores, odio molestias doloremque? Suscipit, asperiores. Laudantium, saepe officia provident voluptas sunt reiciendis cupiditate doloribus earum animi voluptatibus sint hic sit aperiam corrupti fugiat praesentium est autem suscipit at! Esse consequatur pariatur accusantium dolore veniam id quae cupiditate voluptas aliquid quis, doloremque itaque, reiciendis molestias sed debitis veritatis quia explicabo at soluta. Officiis perspiciatis temporibus mollitia nisi, quaerat suscipit numquam facere dicta nam deleniti est veniam rem, enim amet doloribus unde praesentium minima animi, quae dolor laborum eveniet dolorum illo. Labore ea voluptatum alias veritatis, voluptatem laboriosam, rem ducimus harum suscipit odit accusamus quidem, tempore nam placeat minus reiciendis quam nesciunt dolorem magnam itaque aperiam ipsam eum. Debitis recusandae voluptatem veniam porro explicabo hic pariatur ducimus. Soluta laborum corporis earum optio quis voluptas commodi qui vero facilis facere ad, tempora saepe, rerum modi non cupiditate aliquam reiciendis eveniet explicabo! Porro sequi, temporibus perspiciatis dolore aut quaerat qui, cumque nam neque accusamus pariatur harum delectus iusto necessitatibus velit enim possimus maiores debitis dolorum optio, obcaecati magnam? Eveniet minus in dolorem fuga cumque ipsam, asperiores corporis quidem odio earum alias rem modi molestias vel, reiciendis nesciunt nam provident! Dicta consectetur laudantium, esse voluptatibus neque voluptate dolores tempora quidem non dolorem nesciunt temporibus ab exercitationem itaque maxime blanditiis provident consequuntur suscipit quas voluptatem aperiam minima! Eius ex neque quos soluta quasi molestias incidunt. Ea maiores at placeat fugiat eos voluptate illum quos corrupti. Nisi in distinctio doloribus cumque veritatis repellat, recusandae, exercitationem ullam tempora unde aut repudiandae.</p>
+            <button className="text-2xl font-semibold " onClick={onClose}>
+              <MdClose />
+            </button>
+          </div>
+          <div className="mx-8 py-5">
+            <div className="flex pb-5 gap-3 items-center justify-between">
+              <div className='flex flex-wrap items-center gap-4 pt-2'>
+                {STACKS["Next.js"]}
+                {STACKS["TypeScript"]}
+                {STACKS["Material UI"]}
+              </div>
+              <div className="flex gap-1 items-center text-blue-500 text-lg">
+                <button className="">
+                  Source Code
+                </button>
+                <span className="dark:text-gray-50 text-gray-800">|</span>
+                <button>
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div className="bg-red-600 flex items-center justify-center overflow-hidden rounded-xl mb-5">
+              <Image
+                src='/images/pln.png'
+                alt="photo"
+                width={1000}
+                height={1000}
+                className="w-full"
+              />
+            </div>
+            <p className="dark:text-gray-400 text-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error reprehenderit explicabo accusantium adipisci.</p>
           </div>
         </div>
         <div className={`fixed top-0 left-0 w-full h-screen bg-gray-700/20 backdrop-blur-sm blur-sm z-20 transition-all duration-500 ${isAnimating && !isOpen ? "opacity-0" : "opacity-100"}`} onClick={onClose} />

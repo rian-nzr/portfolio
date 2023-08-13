@@ -10,7 +10,7 @@ interface props {
 }
 
 export default function Layout({ children, }: props) {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     return (
         <>
