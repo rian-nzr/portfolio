@@ -12,7 +12,7 @@ export default function CardP({ modalOpen }: Type) {
                 <article className="overflow-hidden rounded-xl dark:bg-gray-900  bg-gray-100 shadow-lg">
                     <div>
                         <Image
-                            src='/images/nextjs.png'
+                            src='/images/pln.png'
                             alt="photo"
                             width={1000}
                             height={1000}

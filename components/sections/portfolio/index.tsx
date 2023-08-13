@@ -20,6 +20,7 @@ export default function PortfolioPage() {
     <>
       <TitlePage title="Portfolio" cari={false} desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ad iure, quis mollitia repellendus laudantium?" />
       <ListP isOpen={modalOpen} onClose={buttonAnimation} />
+  
       <Modal isOpen={modalOpen} onClose={buttonAnimation} isAnimating={isAnimating} />
     </>
   )
