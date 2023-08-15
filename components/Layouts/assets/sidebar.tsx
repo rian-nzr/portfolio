@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useTheme } from "next-themes"
-import { useState, useEffect } from "react";
-import { BsMoonFill } from "react-icons/bs";
-import {
-    BiSolidHome,
-    BiSolidFolderOpen,
-    BiBookReader
-} from "react-icons/bi"
+import {BiSolidHome, BiSolidFolderOpen, BiBookReader} from "react-icons/bi"
 import { SiAboutdotme, SiGithub } from "react-icons/si"
 import { ReactNode } from "react";
 import Navs from "@/components/assets/nav";
@@ -15,6 +8,7 @@ import Navs from "@/components/assets/nav";
 interface props {
     fitur: ReactNode;
 }
+
 const Menus = [
     { title: "Home", icon: BiSolidHome, scr: '/' },
     { title: "portfolio", icon: BiSolidFolderOpen, scr: '/portfolio' },
@@ -23,9 +17,6 @@ const Menus = [
 ];
 
 export default function Sidebar({ fitur }: props) {
-
-
-
     return (
         <>
             <div className="flex fixed border-r-[0.01px] dark:border-gray-600">
