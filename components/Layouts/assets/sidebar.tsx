@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {BiSolidHome, BiSolidFolderOpen, BiBookReader} from "react-icons/bi"
+import { BiSolidHome, BiSolidFolderOpen, BiBookReader } from "react-icons/bi"
 import { SiAboutdotme, SiGithub } from "react-icons/si"
 import { ReactNode } from "react";
 import Navs from "@/components/assets/nav";
@@ -19,8 +19,8 @@ const Menus = [
 export default function Sidebar({ fitur }: props) {
     return (
         <>
-            <div className="flex fixed border-r-[0.01px] dark:border-gray-600">
-                <div className={` ${fitur ? "w-56" : "w-[70px] "} bg-dark-purple -full min-h-screen p-3  pt-8 relative duration-500`}>
+            <div className="flex border-r-[0.01px] dark:border-gray-600">
+                <div className={` ${fitur ? "w-56" : "w-[70px] "} bg-dark-purple min-h-screen   p-3  pt-8 relative duration-500 `}>
                     <div className="flex flex-col gap-3 items-start border-b-[0.01px] dark:border-gray-600 pb-4">
                         <Image
                             src="/images/photo.png"
@@ -40,11 +40,11 @@ export default function Sidebar({ fitur }: props) {
                             </p>
                         </div>
                     </div>
-                    <div className="flex gap-3 flex-col">
+                    <div className="flex gap-3 flex-col h-full justify-between">
 
                         <Navs menus={fitur} />
 
-                        <ul className="pt-2 border-t dark:border-gray-600">
+                        <ul className="pt-2 borde-t dark:border-gray-600 absolute bottom-16">
 
                             <li>
                                 <Link href='https://github.com/rian-nzr/portfolio' target="_blank"
@@ -62,10 +62,8 @@ export default function Sidebar({ fitur }: props) {
                                         :
                                         <p>
                                             <SiGithub className="text-lg" />
-
                                         </p>
                                     }
-
                                     <h2 className={`${!fitur && "scale-0 "} origin-left duration-200 font-medium flex items-center  gap-3`}>
                                         Source Code
                                     </h2>

@@ -18,7 +18,7 @@ export default function Layout({ children, }: props) {
                 <Header setfitur={setOpen} fitur={open} />
                 <div className='flex flex-col sm:flex-row sm:gap-5 relative top-14'>
                     <div className="w-auto">
-                        <div className="sticky top-8 sm:block hidden ">
+                        <div className=" fixed sm:block hidden ">
                             <Sidebar fitur={open} />
                         </div>
                     </div>
